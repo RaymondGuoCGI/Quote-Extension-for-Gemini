@@ -175,6 +175,20 @@ function createAndShowCard(text, inputBox) {
     container.insertBefore(quoteCard, container.firstChild);
     inputBox.scrollIntoView({ behavior: "smooth", block: "center" });
 
+    // 自动聚焦到输入框
+    setTimeout(() => {
+        inputBox.focus();
+        // 如果是 contenteditable 元素,将光标移到末尾
+        if (inputBox.isContentEditable) {
+            const range = document.createRange();
+            const sel = window.getSelection();
+            range.selectNodeContents(inputBox);
+            range.collapse(false);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+    }, 100);
+
     quoteCard.querySelector("#ai-quote-close").addEventListener("click", () => {
         removeCard();
         currentQuoteText = null;
