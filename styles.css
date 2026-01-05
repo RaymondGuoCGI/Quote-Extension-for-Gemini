@@ -1,0 +1,143 @@
+/* styles.css - Universal Version */
+
+/* =========================================
+   1. 触发按钮 (Quote Button)
+   ========================================= */
+#ai-quote-trigger-btn {
+    position: absolute;
+    /* 使用浏览器允许的最大层级，确保在任何网站都不被遮挡 */
+    z-index: 2147483647;
+
+    /* 视觉样式 */
+    background-color: #10a37f;
+    /* 保持品牌色，或者改成 #333 黑色更通用 */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+
+    /* 字体设置 (防御性 CSS，防止继承网站奇怪的字体) */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    /* 布局 */
+    display: none;
+    /* JS 会控制它的显示 */
+    align-items: center;
+    gap: 6px;
+    /* 图标和文字间距 */
+
+    transition: opacity 0.2s, transform 0.1s;
+    pointer-events: auto;
+}
+
+#ai-quote-trigger-btn:hover {
+    transform: scale(1.05);
+    background-color: #0e8e6d;
+}
+
+#ai-quote-trigger-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* =========================================
+   2. 引用卡片 (Quote Card)
+   ========================================= */
+#ai-quote-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* 样式重置 */
+    box-sizing: border-box;
+    text-align: left;
+
+    /* 视觉 */
+    background-color: #2F2F2F;
+    border: 1px solid #424242;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    /* 撑开与输入框的距离 */
+
+    /* 字体 */
+    color: #A0A0A0;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    /* 定位 */
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   3. 文本区域
+   ========================================= */
+#ai-quote-text {
+    flex: 1;
+    margin-right: 12px;
+    white-space: pre-wrap;
+
+    /* 滚动逻辑 */
+    max-height: 120px;
+    overflow-y: auto;
+
+    /* 强制字体颜色，防止被父级覆盖 */
+    color: #A0A0A0;
+}
+
+/* 滚动条美化 */
+#ai-quote-text::-webkit-scrollbar {
+    width: 6px;
+}
+
+#ai-quote-text::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#ai-quote-text::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+#ai-quote-text::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+/* =========================================
+   4. 关闭按钮
+   ========================================= */
+#ai-quote-close {
+    background: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px;
+    height: auto;
+    width: auto;
+    line-height: 1;
+    min-width: unset;
+    /* 防止某些 CSS 框架给 button 设最小宽度 */
+}
+
+#ai-quote-close:hover {
+    color: #fff;
+}
+
+/* =========================================
+   NUCLEAR OPTION: 屏蔽 ChatGPT 官方按钮
+   (保留这个，以防你在 ChatGPT 上使用时想屏蔽官方的)
+   ========================================= */
+button.btn.relative.btn-secondary.shadow-long.flex.rounded-xl.border-none {
+    display: none !important;
+}
