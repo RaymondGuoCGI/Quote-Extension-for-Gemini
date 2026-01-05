@@ -26,7 +26,16 @@
 3. **输入你的问题**：在 AI 聊天输入框中输入你的问题或评论
 4. **发送消息**：按 Enter 键发送，引用文本和你的问题会自动格式化显示
 
-### 📥 安装方法
+#### � 扩展开关控制
+
+你可以通过点击浏览器工具栏中的扩展图标来快速启用或禁用此扩展对当前网页的作用：
+
+![扩展开关](screenshots/toggle-switch.png)
+
+- **绿色开关**：扩展已启用，可以使用引用功能
+- **灰色开关**：扩展已禁用，不会在页面上显示 Quote 按钮
+
+### �📥 安装方法
 
 #### 方法一：开发者模式加载（推荐）
 
@@ -55,12 +64,14 @@
 
 ### 🎨 效果展示
 
-**引用前**：普通的文本选择
+使用 Quote Extension 后，你的引用和问题会以清晰、美观的方式呈现：
 
-**引用后**：
-- 引用文本显示为灰色小字，带有左侧边框
-- 你的问题显示为正常大小的白色文字，带有圆角背景
-- 两者垂直排列，清晰易读
+![效果演示](screenshots/demo-effect.png)
+
+**效果说明**：
+- **引用文本**：显示为灰色小字，带有左侧绿色边框，清晰标识引用内容
+- **你的问题**：显示为正常大小的白色文字，带有圆角深色背景
+- **布局**：引用和问题垂直排列，层次分明，易于阅读
 
 ### ⚙️ 技术特点
 
@@ -125,7 +136,16 @@ MIT License - 详见 LICENSE 文件
 3. **Enter Your Question**: Type your question or comment in the AI chat input box
 4. **Send Message**: Press Enter to send, the quoted text and your question will be automatically formatted
 
-### 📥 Installation
+#### � Extension Toggle Control
+
+You can quickly enable or disable the extension for the current webpage by clicking the extension icon in your browser toolbar:
+
+![Toggle Switch](screenshots/toggle-switch.png)
+
+- **Green Switch**: Extension is enabled, quote functionality is active
+- **Gray Switch**: Extension is disabled, Quote button will not appear on the page
+
+### �📥 Installation
 
 #### Method 1: Load in Developer Mode (Recommended)
 
@@ -154,12 +174,14 @@ MIT License - 详见 LICENSE 文件
 
 ### 🎨 Visual Effect
 
-**Before Quoting**: Normal text selection
+With Quote Extension, your quotes and questions are presented in a clear and beautiful way:
 
-**After Quoting**:
-- Quoted text appears in small gray text with a left border
-- Your question appears in normal-sized white text with a rounded background
-- Both are vertically arranged, clear and easy to read
+![Demo Effect](screenshots/demo-effect.png)
+
+**Effect Description**:
+- **Quoted Text**: Displayed in small gray text with a green left border, clearly marking the quoted content
+- **Your Question**: Displayed in normal-sized white text with a rounded dark background
+- **Layout**: Quotes and questions are vertically arranged, well-structured and easy to read
 
 ### ⚙️ Technical Features
 
