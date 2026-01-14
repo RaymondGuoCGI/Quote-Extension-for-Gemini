@@ -1,6 +1,6 @@
 # Privacy Policy for Quote Extension
 
-**Last Updated: January 5, 2026**
+**Last Updated: January 14, 2026**
 
 ## Overview
 
