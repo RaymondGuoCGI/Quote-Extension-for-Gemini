@@ -1,5 +1,6 @@
 # Chrome Web Store publishing files
 webstore/
+screenshots/
 
 # Temporary files
 *.zip
