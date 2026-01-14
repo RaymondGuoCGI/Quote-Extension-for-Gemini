@@ -1,10 +1,10 @@
-# Privacy Policy for Quote Extension
+﻿# Privacy Policy for Quote Extension for Gemini
 
 **Last Updated: January 14, 2026**
 
 ## Overview
 
-Quote Extension ("the Extension") is committed to protecting your privacy. This privacy policy explains how the Extension handles user data.
+Quote Extension for Gemini ("the Extension") is committed to protecting your privacy. This privacy policy explains how the Extension handles user data.
 
 ## Data Collection
 
@@ -14,7 +14,7 @@ Quote Extension ("the Extension") is committed to protecting your privacy. This 
 
 The Extension only stores the following data locally on your device:
 
-- **Extension Toggle State**: Whether the extension is enabled or disabled for the current webpage
+- **Extension Toggle State**: Whether the extension is enabled or disabled for Gemini
   - This data is stored using Chrome's `chrome.storage.local` API
   - This data never leaves your device
 
@@ -40,12 +40,12 @@ The Extension requires the following permissions to function:
 
 ### clipboardWrite
 - **Purpose**: To copy formatted quote text to your clipboard
-- **Usage**: Only when you use the quote feature on non-AI chat pages
+- **Usage**: Only when you use the quote feature
 - **Data Handling**: Text is copied to your system clipboard and not stored by the extension
 
-### host_permissions: <all_urls>
-- **Purpose**: To allow the extension to work on all websites
-- **Usage**: Enables the quote functionality on any webpage you visit
+### host_permissions: https://gemini.google.com/*
+- **Purpose**: To allow the extension to work on Google Gemini
+- **Usage**: Enables the quote functionality on Gemini
 - **Data Handling**: No data is collected or transmitted. The extension only reads selected text when you actively use the quote feature, and this text is processed locally without being stored or transmitted
 
 ## Third-Party Services
@@ -77,4 +77,4 @@ Since the Extension does not collect any personal data, there is no personal dat
 
 ---
 
-**Summary**: Quote Extension respects your privacy. It does not collect, store, or transmit any personal data. All functionality is performed locally on your device.
+**Summary**: Quote Extension for Gemini respects your privacy. It does not collect, store, or transmit any personal data. All functionality is performed locally on your device.
